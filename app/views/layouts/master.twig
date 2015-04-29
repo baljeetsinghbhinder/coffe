@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning in laravel</title>
+
+    {#
+        <!-- Bootstrap Core CSS 
+        <link href="css/bootstrap.min.css" rel="stylesheet"--> 
+        <!--     {{ HTML::style('css/bootstrap.min.css') }} -->
+           
+        <!-- Custom CSS -->
+        <!-- <link href="css/shop-item.css" rel="stylesheet"> -->
+        <!-- {{ HTML::style('css/style.css') }} -->
+    #}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+
+    <!-- jQuery -->
+    <script src="{{asset('js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    {% include 'pages/navbar.twig' %}
+
+    <!-- Page Content -->
+    <div class="container"  style="min-height:750px">
+        {% block content %}
+        {% endblock content%}
+    </div>
+
+    <!-- Footer -->
+    {% include 'pages/footer.twig' %}
+
+</body>
+
+</html>

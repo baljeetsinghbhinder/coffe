@@ -1,0 +1,1 @@
+/var/www/html/coffe/app/views/NewScaffs/edit.blade.php

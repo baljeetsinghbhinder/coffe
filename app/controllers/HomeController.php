@@ -61,4 +61,13 @@ class HomeController extends BaseController {
 	         return Redirect::to( (string)$url );
 	    }
 	}
+
+	/**
+	* to check laravel app's enfvironment
+	*
+	*/
+	public function getEnv(){
+		$environment = App::environment();
+		die('Your App is in '.$environment.' environment');
+	}
 }

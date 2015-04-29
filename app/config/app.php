@@ -123,6 +123,10 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Artdarek\OAuth\OAuthServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+ 	    'TwigBridge\ServiceProvider',
+ 	    'Watson\Active\ActiveServiceProvider'
+     
 	),
 
 	/*
@@ -191,6 +195,8 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		'OAuth' 		  => 'Artdarek\OAuth\Facade\OAuth',
 		'Debugbar'		  => 'Barryvdh\Debugbar\Facade',
+		'Twig' 			  => 'TwigBridge\Facade\Twig',
+		'Active' 		  => 'Watson\Active\Facades\Active'
 	),
 
 );
